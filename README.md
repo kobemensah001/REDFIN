@@ -3,7 +3,8 @@
 The notebook outlines the process of model monitoring and endpoint invocation using AWS SageMaker for a Redfin housing model. It includes setting up the environment, organizing imports, creating common objects like S3 buckets, and preparing the dataset for training, validation, and testing. The model is trained using XGBoost, and various hyperparameters are set for the training process. After training, the model is deployed with specified instance details, and a data capture configuration is enabled for capturing inference requests and responses. Data Quality and Model Quality monitors are set up for continuous monitoring of the model's performance, with detailed steps for creating baselines, suggesting baselines, and scheduling monitoring jobs.
 
 The notebook details the setup and configuration of **Data Quality and Model Quality** monitors for a Redfin housing model using AWS SageMaker. Both monitors are scheduled to run at specified intervals, with the schedule details outlined as follows:
-Data Quality Monitor:
+
+**Data Quality Monitor:**
 •	ARN: The Amazon Resource Name (ARN) for the Data Quality monitoring schedule is specified, indicating the unique identifier in AWS.
 •	Name: The schedule is named dq-mon-sch-redfin-xgboost-housing-monitor-alert, signifying its purpose for monitoring data quality specifically for the Redfin housing model.
 •	Status: The schedule is currently set to Scheduled, indicating that it is active and will execute according to the defined schedule.
@@ -12,7 +13,8 @@ Data Quality Monitor:
 •	Job Definition Name: The job definition data-quality-job-definition-2024-03-03-16-28-46-567 is used for the monitoring tasks, likely specifying the parameters and resources for the data quality checks.
 •	Endpoint: The monitored endpoint is named endpt-redfin-xgboost-housing-monitor-alert, where the model is deployed and serving predictions.
 
-Model Quality Monitor:
+
+**Model Quality Monitor:**
 •	ARN: Similar to the Data Quality monitor, a unique ARN is provided for the Model Quality monitoring schedule.
 •	Name: The schedule is named mq-mon-sch-redfin-xgboost-housing-monitor-alert, indicating its role in monitoring the model's quality.
 •	Status: Also set to Scheduled, this schedule is active and will run at specified intervals to check the model's performance and quality.
