@@ -23,9 +23,10 @@ The notebook details the setup and configuration of **Data Quality and Model Qua
 •	Job Definition Name: The job definition model-quality-job-definition-2024-03-03-16-29-00-573 likely specifies the metrics and thresholds for evaluating model quality.
 •	Endpoint: It monitors the same endpoint as the Data Quality schedule, endpt-redfin-xgboost-housing-monitor-alert, ensuring the model's predictions remain accurate and reliable.
 
-Data Quality Statistics
+**Data Quality Statistics**
+
 The Data Quality Monitor statistics and constraints for the Redfin housing model provide insights into the data quality aspects monitored, including completeness and distinctness of data fields, as well as the configuration settings for evaluating these constraints.
-Statistics Summary:
+**Statistics Summary:**
 •	Median Sale Price YoY: This field is of type String with 38,236 present entries and no missing entries. It has a high number of distinct values (41,247), suggesting significant variability in the year-over-year median sale price data.
 •	Other fields such as Median List Price, Homes Sold, Homes Sold YoY, New Listings, New Listings YoY, Median DOM, and Parent Metro Region Metro Code are recognized but have their inferred types marked as Unknown, indicating a potential lack of data or that their data types could not be inferred from the available data.
 Constraints Summary:
@@ -38,9 +39,10 @@ Monitoring Configuration:
 •	Distribution Constraints: Comparisons are enabled with a threshold of 0.1, using a robust comparison method. For categorical fields, a drift method (LInfinity) is specified with a categorical comparison threshold of 0.1, indicating sensitivity to changes in the distribution of categorical variables.
 This setup ensures rigorous monitoring of data quality, focusing on the completeness of critical fields and the distribution of data values to detect any significant deviations that might affect the model's performance.
 
-Model Quality Statistics
+**Model Quality Statistics**
+
 The Model Quality Monitor for the Redfin housing model provides a detailed analysis of the model's performance metrics and the constraints set for monitoring model quality:
-Model Quality Statistics:
+**Model Quality Statistics:**
 •	Mean Absolute Error (MAE): The value is 62,338.89 with a standard deviation of 2,967.03, indicating the average absolute difference between predicted and actual values.
 •	Mean Squared Error (MSE): The value is 105,563,148,530.21 with a standard deviation of 31,773,907,088.79, reflecting the average of the squares of the errors or deviations.
 •	Root Mean Squared Error (RMSE): The value is 324,904.83 with a standard deviation of 54,501.88, providing a measure of the magnitude of errors between predicted and actual values.
