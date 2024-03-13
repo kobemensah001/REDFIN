@@ -1,5 +1,5 @@
-**Train, deploy and monitor a XGBoost regression model with the Amazon SageMaker on REDFIN Dataset
-**
+**Train, deploy and monitor a XGBoost regression model with the Amazon SageMaker on REDFIN Dataset**
+
 The notebook outlines the process of model monitoring and endpoint invocation using AWS SageMaker for a Redfin housing model. It includes setting up the environment, organizing imports, creating common objects like S3 buckets, and preparing the dataset for training, validation, and testing. The model is trained using XGBoost, and various hyperparameters are set for the training process. After training, the model is deployed with specified instance details, and a data capture configuration is enabled for capturing inference requests and responses. Data Quality and Model Quality monitors are set up for continuous monitoring of the model's performance, with detailed steps for creating baselines, suggesting baselines, and scheduling monitoring jobs.
 
 The notebook details the setup and configuration of Data Quality and Model Quality monitors for a Redfin housing model using AWS SageMaker. Both monitors are scheduled to run at specified intervals, with the schedule details outlined as follows:
